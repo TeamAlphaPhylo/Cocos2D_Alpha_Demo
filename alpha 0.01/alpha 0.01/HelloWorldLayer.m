@@ -9,6 +9,7 @@
 
 // Import the interfaces
 #import "HelloWorldLayer.h"
+#import "TestScene.h"
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
@@ -97,8 +98,16 @@
             [self addChild:sprite];
             [movableCards addObject:sprite];
         }
-        [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
         
+        // (Roger) Add Menu Item
+        CCMenuItemImage *item1 = [CCMenuItemImage itemWithNormalImage:@"10.png" selectedImage:@"11.png" target:self selector:@selector(jumpToNextScene:)];
+        CCMenu *menu = [CCMenu menuWithItems:item1, nil];
+        
+        [self addChild: menu];
+        
+        // (Roger) Disabled due to the depreciated functions/methods
+        //        [[CCTouchDispatcher sharedDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
+        [[[CCDirector sharedDirector] touchDispatcher] addTargetedDelegate:self priority:0 swallowsTouches:YES];
 	}
     
 // (Roger) Disabled (For testing and debugging purposes)
@@ -122,6 +131,11 @@
 	[super dealloc];
     [movableCards release];
     movableCards = nil;
+}
+
+- (void)jumpToNextScene: (CCMenuItem *)item {
+    NSLog(@"Button Being hit");
+    [[CCDirector sharedDirector] replaceScene:[CCTransitionFade transitionWithDuration:1.0 scene:[TestScene scene] ]];
 }
 
 - (void)selectCardForTouch:(CGPoint)touchLocation {

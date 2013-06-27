@@ -552,6 +552,7 @@
 		AC725D6D177A8B8D0076CE60 /* 426.png in Resources */ = {isa = PBXBuildFile; fileRef = AC725BD3177A8B8D0076CE60 /* 426.png */; };
 		AC725D6E177A8B8D0076CE60 /* 427.png in Resources */ = {isa = PBXBuildFile; fileRef = AC725BD4177A8B8D0076CE60 /* 427.png */; };
 		AC725D6F177A8B8D0076CE60 /* 428.png in Resources */ = {isa = PBXBuildFile; fileRef = AC725BD5177A8B8D0076CE60 /* 428.png */; };
+		AC895D59177CF89D0091B967 /* TestScene.m in Sources */ = {isa = PBXBuildFile; fileRef = AC895D58177CF89D0091B967 /* TestScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1247,6 +1248,8 @@
 		AC725BD3177A8B8D0076CE60 /* 426.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 426.png; sourceTree = "<group>"; };
 		AC725BD4177A8B8D0076CE60 /* 427.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 427.png; sourceTree = "<group>"; };
 		AC725BD5177A8B8D0076CE60 /* 428.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 428.png; sourceTree = "<group>"; };
+		AC895D57177CF89D0091B967 /* TestScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestScene.h; sourceTree = "<group>"; };
+		AC895D58177CF89D0091B967 /* TestScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1307,10 +1310,12 @@
 		AC72584B177A78F70076CE60 /* alpha 0.01 */ = {
 			isa = PBXGroup;
 			children = (
-				AC7259DC177A78FA0076CE60 /* AppDelegate.h */,
-				AC7259DD177A78FA0076CE60 /* AppDelegate.m */,
+				AC895D57177CF89D0091B967 /* TestScene.h */,
+				AC895D58177CF89D0091B967 /* TestScene.m */,
 				AC7259DF177A78FA0076CE60 /* HelloWorldLayer.h */,
 				AC7259E0177A78FA0076CE60 /* HelloWorldLayer.m */,
+				AC7259DC177A78FA0076CE60 /* AppDelegate.h */,
+				AC7259DD177A78FA0076CE60 /* AppDelegate.m */,
 				AC7259E2177A78FA0076CE60 /* IntroLayer.h */,
 				AC7259E3177A78FA0076CE60 /* IntroLayer.m */,
 				AC72584C177A78F70076CE60 /* Resources */,
@@ -2708,6 +2713,7 @@
 				AC7259DE177A78FA0076CE60 /* AppDelegate.m in Sources */,
 				AC7259E1177A78FA0076CE60 /* HelloWorldLayer.m in Sources */,
 				AC7259E4177A78FA0076CE60 /* IntroLayer.m in Sources */,
+				AC895D59177CF89D0091B967 /* TestScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
