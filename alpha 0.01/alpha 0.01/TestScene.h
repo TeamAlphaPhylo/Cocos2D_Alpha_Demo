@@ -8,9 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "AppDelegate.h"
 
 @interface TestScene : CCLayer {
-    
+    CCSprite *background;
+    CCSprite *selectedCard;
+    NSMutableArray *movableCards;
 }
 +(CCScene *) scene;
 
